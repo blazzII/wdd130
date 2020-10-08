@@ -1,0 +1,24 @@
+main {
+  display: grid;
+  grid-template-columns: 250px 2fr 1fr;
+  grid-gap: 40px;
+  width: 800px;
+  align-items: center;
+
+}
+
+picture img {
+  border: 1px solid #999;
+}
+
+.one {
+  background-color: #ddd;
+  padding: .75rem;
+}
+
+.two {
+  padding: 1rem;
+  background-color: #abe;
+  border: 1px solid #999;
+  box-shadow: 0 0 30px #333;
+}

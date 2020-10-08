@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Fun</title>
+    <meta name="description" content="A demonstration of the basic elements of a form." />
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet" />
+    <link href="css/formfun.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Form Fun</h1>
+    </header>
+    <main>
+      <div id="feedback"></div>
+      <form action="thanks.html" method="post">
+        <label for="firstName">Please enter your first name: </label>
+        <input type="text" id="firstName" name="firstName" size="40" placeholder="Enter Your First Name" pattern="[A-Z][a-z]{*}" />
+        <label for="email">Please enter your email address: </label>
+        <input type="email" id="email" name="email" required />
+        <label for="zipCode">Please enter your zip code: </label>
+        <input type="number" id="zipCode" name="zipCode" value="83460" />
+        <label for="state">Please select your State: </label>
+        <select name="state" id="state">
+          <option value="" disabled selected>Choose from this list</option>
+          <option value="ak">Alaska</option>
+          <option value="nv">Nevada</option>
+          <option value="nw">New Mexico</option>
+        </select>
+        <label for="comments">Any Comments?:</label>
+        <textarea name="comments" id="comments"> </textarea>
+        <p></p>
+        <button type="submit">Register for the class</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2020 | WDD 130 | Form Fun | Brigham Young University - Idaho</p>
+    </footer>
+
+    <script src="js/formfeedback.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+div.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow:   
+}
+
+header {
+  background-color: #fff;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: navy;
+  margin: 0;
+}
+
+.motto {
+  font-style: italic;
+  color: forestgreen;
+  font-size: 1rem;
+  letter-spacing: 1.5pt;
+}
+
+nav {
+  background-color: navy;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem;
+}

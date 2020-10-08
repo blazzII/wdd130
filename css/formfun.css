@@ -1,0 +1,53 @@
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: Acme, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main {
+  background: #bbeedd;
+  padding: 0.8rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+  align-items: center;
+}
+
+label {
+  text-align: right;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 15px #333;
+}
+
+#feedback {
+  margin: 0.8rem;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  background-color: #ccc;
+  display: none; /* we will make the element invisible until the form is submitted successfully */
+}

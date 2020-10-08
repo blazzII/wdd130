@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .card {
+        width: 320px;
+        box-shadow: 1px 1px 4px 1px #888;
+        border-radius: 3px;
+        background-color: white;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      p {
+        padding: 0.5rem;
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+      }
+      button {
+        padding: 0.5rem;
+        border: 1px solid #777;
+        color: #444;
+        background-color: #ffffff;
+        width: 4rem;
+      }
+
+      .viewButton {
+        border-radius: 5px 0 0 5px;
+      }
+      .editButton {
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+      }
+
+      span {
+        
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <img src="https://picsum.photos/320/240/" alt="Random Picture" />
+      <div class="container">
+        <p>
+          Review the mockup above. It looks like there are three groupings of
+          content. The image above, the paragraph, and the buttons and time on
+          the bottom. We need to add the HTML elements to define those areas.
+        </p>
+        <footer>
+          <button class="viewButton" type="button">View</button
+          ><button class="editButton" type="button">Edit</button>
+          <span>9 mins</span>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
