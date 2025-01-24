@@ -1,0 +1,127 @@
+input,
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #bbb;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+}
+
+#report {
+  margin: 1.5rem;
+  border-top: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+}
+
+#report main {
+  display: grid;
+  margin-top: 0;
+}
+
+#report .callout {
+  margin-bottom: 0;
+}
+
+#report main h3 {
+  grid-column: 1/4;
+}
+
+.colhead {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: larger;
+  text-align: center;
+}
+
+#message {
+  font-size: .95rem;
+  margin: 0 2rem;
+}
+
+.label,
+.data,
+.standard {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid rgb(0 0 0 / .2);
+  border-bottom: 1px solid rgb(0 0 0 / .2);
+  padding: 0.35rem 0.5rem;
+}
+
+.label {
+  justify-content: right;
+  background-color: #000;
+  color: #fff;
+  font-size: smaller;
+  font-weight: 600;
+  border-right: none;
+  border-bottom: 1px solid rgb(255 255 255 / .4);
+}
+
+.data {
+  justify-content: center;
+}
+
+.standard {
+  justify-content: left;
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blue {
+  padding: 0 .5rem;
+  color: darkblue;
+  background-color: rgb(255 255 225 / .5);
+}
+
+.highlight {
+  font-size: smaller;
+  color: rgb(33 33 33 / 0.7);
+  ;
+}
+
+dialog {
+  position: relative;
+  max-width: 60ch;
+  background-color: rgb(225 180 180 / 0.965);
+  border: 1px solid rgb(0 0 0 / .5);
+  box-shadow: 0 0 2rem #777;
+
+}
+
+dialog .dtitle {
+  font-weight: 700;
+  border-bottom: 1px solid #777;
+}
+
+dialog .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+dialog>* {
+  padding: .25rem;
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+@media (min-width: 520px) {
+  #report main {
+    grid-template-columns: 210px 50px 1fr;
+  }
+}

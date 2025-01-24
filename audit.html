@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD | Audit Interface</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://byui-cse.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/course.css">
+  <link rel="stylesheet" href="styles/standards.css">
+  <script src="scripts/urlParams.js" defer></script>
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD<span id="coursetitle">: Page Audit</span></h1>
+      <img src="images/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+  <main class="page">
+    <h2>Audit: <span class="highlight" id="assignment"></span></h2>
+    <div class="callout reference">
+      <label for="student">Enter your GitHub Username:</label>
+      <input type="text" id="student" placeholder="GitHub Username ONLY" required title="GitHub Username Required">
+      <button type="submit" id="getReport">Run Report</button>
+    </div>
+    <div class="callout warning" id="message" style="display: block;">
+      <p>If you do not get a report, there may be something wrong with your GitHub repository, repository structure, or a CSS code comment was included at the end of any CSS file.</p>
+      <p><strong>Check the following:</strong>
+      <ul class="check">
+        <li>You entered ONLY your GitHub account <strong>username</strong></li>
+        <li>You have a GitHub repository named "<code class="course"></code>"</li>
+        <li><strong>GitHub Pages</strong> has been enabled for "<code class="course"></code>"</li>
+        <li>You have a file named "<code class="file"></code>" <span class="path"></span></li>
+        <li>Do NOT end any CSS file with a CSS code comment</li>
+      </ul>
+      <p id="sub_messages"></p>
+      <!-- <p class="callout info">
+        Here is an example of what the tool is looking for on your GitHub Pages enabled site:<br>
+        <code class="plaintext">https://<em>your-github-username</em>.github.io/wdd130</code>
+      </p>
+      <p class="callout reference">
+        The above URL reference will automatically request the "<code>index.html</code>"" file in your
+        <code>wdd130</code> repository.
+      </p> -->
+      </p>
+    </div>
+    <div id="report"></div>
+  </main>
+  <footer>
+    <p>Copyright &copy; Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+
+</body>
+
+</html>
